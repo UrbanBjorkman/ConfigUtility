@@ -1,0 +1,4 @@
+C:\projects\ConfigUtility\ConfigUtility\bin\Debug\ConfigUtility.dll
+C:\projects\ConfigUtility\ConfigUtility\bin\Debug\ConfigUtility.pdb
+C:\projects\ConfigUtility\ConfigUtility\obj\Debug\ConfigUtility.dll
+C:\projects\ConfigUtility\ConfigUtility\obj\Debug\ConfigUtility.pdb
