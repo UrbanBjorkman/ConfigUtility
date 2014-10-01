@@ -10,6 +10,9 @@ namespace ConfigUtility
 	public class ClearConfig : Task
 	{
 
+		/// <summary>
+		/// Path to the config file to clear
+		/// </summary>
 		private string _configFilename;
 		[Required]
 		public string ConfigFilename
@@ -18,6 +21,11 @@ namespace ConfigUtility
 			set { _configFilename = value; }
 		}
 
+
+		/// <summary>
+		/// Task entrypoint
+		/// </summary>
+		/// <returns></returns>
 		public override bool Execute()
 		{
 			try
@@ -41,7 +49,10 @@ namespace ConfigUtility
 		}
 
 
-
+		/// <summary>
+		/// Generates XmlDocument, empty
+		/// </summary>
+		/// <returns></returns>
 		private XmlDocument GenerateEmpty()
 		{
 			var sb = new StringBuilder();
