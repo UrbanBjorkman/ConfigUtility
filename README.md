@@ -31,7 +31,8 @@ then it merges client.config into appsettings.config and after that it merges en
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="TestTarget">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" 
+		 DefaultTargets="TestTarget">
 
   <UsingTask TaskName="MergeConfig"
 						 AssemblyFile="Libs\ConfigUtility.dll" />
