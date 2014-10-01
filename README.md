@@ -18,7 +18,8 @@ Then you can use merge and clear in your buildsteps
 
 ```
 <ClearConfig ConfigFilename="appSettings.config" />
-<MergeConfig SourceConfigFilename="enviroment.config" TargetConfigFilename="appSettings.config" />
+<MergeConfig SourceConfigFilename="enviroment.config" 
+			 TargetConfigFilename="appSettings.config" />
 ```
 
 
@@ -41,8 +42,10 @@ then it merges client.config into appsettings.config and after that it merges en
   <Target Name="TestTarget">
     <ClearConfig ConfigFilename="appSettings.config" />
 
-	<MergeConfig SourceConfigFilename="client.config" TargetConfigFilename="appSettings.config" />
-    <MergeConfig SourceConfigFilename="enviroment.config" TargetConfigFilename="appSettings.config" />
+	<MergeConfig SourceConfigFilename="client.config" 
+				 TargetConfigFilename="appSettings.config" />
+    <MergeConfig SourceConfigFilename="enviroment.config"
+				 TargetConfigFilename="appSettings.config" />
   </Target>
 
 </Project>
