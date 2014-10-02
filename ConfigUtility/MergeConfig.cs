@@ -8,11 +8,16 @@ using Microsoft.Build.Utilities;
 
 namespace ConfigUtility
 {
-
+	/// <summary>
+	/// Merges two config files into one
+	/// </summary>
 	public class MergeConfig : Task
 	{
 		private string _sourceConfigFilename;
 
+		/// <summary>
+		/// The file that will be used to merge, this file overrides any duplicate keys
+		/// </summary>
 		[Required]
 		public string SourceConfigFilename
 		{
@@ -22,6 +27,10 @@ namespace ConfigUtility
 
 		private string _targetConfigFilename;
 
+
+		/// <summary>
+		/// The destination file of the merge
+		/// </summary>
 		[Required]
 		public string TargetConfigFilename
 		{
@@ -56,7 +65,11 @@ namespace ConfigUtility
 
 		}
 
-
+		/// <summary>
+		/// Generates XML Document
+		/// </summary>
+		/// <param name="keyValues"></param>
+		/// <returns></returns>
 		private XmlDocument Generate(Dictionary<string, string> keyValues)
 		{
 			var sb = new StringBuilder();
