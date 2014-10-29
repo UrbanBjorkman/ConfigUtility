@@ -29,6 +29,7 @@ Example script
 The script first clears all settings in the appsettings.config file 
 then it merges client.config into appsettings.config and after that it merges enviroment.config into appsettings.config
 
+
 ```
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" 
